@@ -1,0 +1,275 @@
+/* .container {
+    width: 575px;
+    height: 825px;
+  
+    background-color: #797978;
+    padding-left: 30px;
+  }
+  #height,
+  #weight {
+    width: 150px;
+    height: 25px;
+    margin-top: 30px;
+  }
+  
+  #weight-guide {
+    margin-left: 75px;
+    margin-top: 25px;
+  }
+  
+  #results {
+    font-size: 35px;
+    margin-left: 90px;
+    margin-top: 20px;
+    color: rgb(241, 241, 241);
+  }
+  
+  button {
+    width: 150px;
+    height: 35px;
+    margin-left: 90px;
+    margin-top: 25px;
+    background-color: #fff;
+    padding: 1px 30px;
+    border-radius: 8px;
+    color: #212121;
+    text-decoration: none;
+    border: 2px solid #212121;
+  
+    font-size: 25px;
+  }
+  
+  h1 {
+    padding-left: 15px;
+    padding-top: 25px;
+    
+  } */
+
+
+
+
+
+
+
+
+
+
+/* 
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 575px;
+    margin: 50px auto;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#results {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+}
+
+#weight-guide {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (min-width: 576px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 1200px;
+    }
+} */
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+}
+
+/* .container {
+    max-width: 575px;
+    margin: 50px auto;
+    background: url('https://images.pexels.com/photos/5491026/pexels-photo-5491026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover no-repeat;
+    filter: blur(3px);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+} */
+
+.container {
+  position: relative;
+  max-width: 575px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://images.pexels.com/photos/5491026/pexels-photo-5491026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover no-repeat;
+  filter: blur(3px);
+  z-index: -1;
+}
+
+form {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #8c8c00;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: rgb(253, 253, 253);
+    font-size: 2em;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+button {
+    width: calc(100% - 20px);
+    padding: 12px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    background-color: #4c4faf;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#results {
+    font-size: 24px;
+    margin-top: 20px;
+    color: rgb(233, 229, 229)
+}
+
+#weight-guide {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* @media only screen and (min-width: 576px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 1200px;
+    }
+} */
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('https://images.pexels.com/photos/1547813/pexels-photo-1547813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover no-repeat;
+    filter: grayscale(20%) blur(4px);
+}
